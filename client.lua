@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) and NaoMostrarMensagemPassageiro(GetPlayerPed(-1)) == -1 then
             exports.pNotify:SendNotification({
                 text = "Você não pode se render em um veículo",
-                type = "info",timeout = 3000,progressBar = false, layout = "zezao",queue = "left",
+                type = "info",timeout = 3000,progressBar = false, layout = "centerLeft",queue = "left",
                 animation = {open = "gta_effects_fade_in", close = "gta_effects_fade_out"}
             })
         else
